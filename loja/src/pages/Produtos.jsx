@@ -21,13 +21,15 @@ function Produtos(){
     return <>
           <h2> Produtos</h2>
 
-
         <ul>
             {produtos.map(
             (prod) => (
                 <li> 
                     <img src={prod.thumbnail} alt="foto produto 1"/> 
                     <Link to={`/produto/${prod.id}`}> Produto {prod.id}</Link>
+                    <p>{prod.description}</p>
+                    <p>US$ {prod.price}</p>
+
                 </li>
             )
           )}

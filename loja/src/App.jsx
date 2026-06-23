@@ -6,6 +6,7 @@ import Produtos from './pages/Produtos'
 import Produto from './pages/Produto'
 import Usuarios from './pages/Usuarios'
 import Usuario from './pages/Usuario'
+import DescreverProduto from './pages/DescreverProduto'
 function App() {
  
 
@@ -18,6 +19,7 @@ function App() {
         <Route path='/produto/:id' element={<Produto/>}/>
         <Route path='/usuarios' element={<Usuarios/>}/>
         <Route path='/usuario/:id' element={<Usuario/>}/>
+        <Route path="/descrever" element={<DescreverProduto />} />
       </Routes>
     </>
 
