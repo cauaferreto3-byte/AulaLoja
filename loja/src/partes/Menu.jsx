@@ -3,27 +3,33 @@ import Produto from "../pages/Produto";
 import Usuario from "../pages/Usuario";
 function Menu(){
  
-    let inicio = {
-        backgroundColor: "blue"
+    let AreaLista = {
+        // width: "80%",
+        marginTop: "0px",
+        display: "flex",    
+        justifyContent: "center",
+        // border: "1px solid blue",
+        listStyle: "none"
     }
 
-    let meio = {
-
+    let conteudo = {
+        marginRight: "10px",
+        marginLeft: "10px"
     }
     
     let areaProduto = {
-
+        
     }
 
  return <>
-        <ul>
-            <li>
+        <ul style={AreaLista}>
+            <li style={conteudo}>
                <Link to="/"> Produtos </Link>
             </li>
-            <li>
+            <li style={conteudo}>
                 <Link to="/usuarios"> Usuarios </Link>
             </li>
-             <li>
+             <li style={conteudo}>
                 <Link to="/descrever">                
                     Descrever
                 </Link>
